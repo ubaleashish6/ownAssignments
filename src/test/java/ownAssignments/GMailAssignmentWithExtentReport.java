@@ -4,6 +4,8 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -40,7 +42,8 @@ public class GMailAssignmentWithExtentReport {
 	
 	@BeforeSuite
 	public void init(){
-		htmlReport=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/reports/ExtentReport.html"));
+		String reportDate=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		htmlReport=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/reports/ExtentReport_"+reportDate+".html"));
 		htmlReport.config().setDocumentTitle("Automation Report");
 		htmlReport.config().setReportName("Gmail Functionality");
 		htmlReport.config().setTheme(Theme.DARK);

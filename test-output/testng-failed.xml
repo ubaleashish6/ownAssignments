@@ -9,7 +9,6 @@
         <methods>
           <include name="init"/>
           <include name="flushExtent"/>
-          <include name="verifyEmailReceivedAndMarkStar"/>
           <include name="openEmail"/>
           <include name="launchChromeBrowser"/>
           <include name="updateExtentReport"/>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 2 failed,   11 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ownAssignments.GMailAssignmentWithExtentReport" hash-for-method="openEmail">openEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ownAssignments.GMailAssignmentWithExtentReport" hash-for-method="verifyEmailReceivedAndMarkStar">verifyEmailReceivedAndMarkStar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -171,6 +166,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ownAssignments.GMailAssignmentWithExtentReport" hash-for-method="verifyEmailReceivedAndMarkStar">verifyEmailReceivedAndMarkStar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ownAssignments.GMailAssignmentWithExtentReport" hash-for-method="verifyEmailReceivedInSocialTab">verifyEmailReceivedInSocialTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -198,34 +198,12 @@
                   </a> <!-- openEmail -->
                   <span class="method-name">openEmail</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at ownAssignments.GMailAssignmentWithExtentReport.openEmail(GMailAssignmentWithExtentReport.java:205)
+	at ownAssignments.GMailAssignmentWithExtentReport.openEmail(GMailAssignmentWithExtentReport.java:208)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 ... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEmailReceivedAndMarkStar">
-                  </a> <!-- verifyEmailReceivedAndMarkStar -->
-                  <span class="method-name">verifyEmailReceivedAndMarkStar</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;In regards with selenium automation&apos;]/parent::div/parent::td/preceding-sibling::td/span[1] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e8f6c789b8ee605093018575ccdc6415
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at ownAssignments.GMailAssignmentWithExtentReport.verifyEmailReceivedAndMarkStar(GMailAssignmentWithExtentReport.java:184)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -309,6 +287,13 @@ Session ID: e8f6c789b8ee605093018575ccdc6415
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyEmailReceivedAndMarkStar">
+                  </a> <!-- verifyEmailReceivedAndMarkStar -->
+                  <span class="method-name">verifyEmailReceivedAndMarkStar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyEmailReceivedInSocialTab">
                   </a> <!-- verifyEmailReceivedInSocialTab -->
                   <span class="method-name">verifyEmailReceivedInSocialTab</span>
@@ -371,57 +356,57 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEmailReceivedAndMarkStar')
+data.setCell(0, 1, 'clickOnComposeButton')
 data.setCell(0, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(0, 3, 18301);
+data.setCell(0, 3, 13490);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickOnComposeButton')
+data.setCell(1, 1, 'enterSocialTextAndSelect')
 data.setCell(1, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(1, 3, 14135);
+data.setCell(1, 3, 11392);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'enterSocialTextAndSelect')
+data.setCell(2, 1, 'verifyEmailReceivedInSocialTab')
 data.setCell(2, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(2, 3, 11413);
+data.setCell(2, 3, 6258);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyEmailReceivedInSocialTab')
+data.setCell(3, 1, 'verifyEmailReceivedAndMarkStar')
 data.setCell(3, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(3, 3, 6061);
+data.setCell(3, 3, 4911);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'openEmail')
+data.setCell(4, 1, 'enterPasswordAndClickOnNext')
 data.setCell(4, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(4, 3, 4180);
+data.setCell(4, 3, 3398);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'enterPasswordAndClickOnNext')
+data.setCell(5, 1, 'markSocial')
 data.setCell(5, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(5, 3, 3399);
+data.setCell(5, 3, 3393);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'markSocial')
+data.setCell(6, 1, 'hoverMouseOverLabelMenu')
 data.setCell(6, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(6, 3, 3327);
+data.setCell(6, 3, 3271);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'hoverMouseOverLabelMenu')
+data.setCell(7, 1, 'enterMailBodyContent')
 data.setCell(7, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(7, 3, 3285);
+data.setCell(7, 3, 3225);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'enterMailBodyContent')
+data.setCell(8, 1, 'openEmail')
 data.setCell(8, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(8, 3, 3025);
+data.setCell(8, 3, 3126);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'enterSubject')
 data.setCell(9, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(9, 3, 2818);
+data.setCell(9, 3, 2810);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'enterToEmailID')
 data.setCell(10, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(10, 3, 2569);
+data.setCell(10, 3, 2575);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'clickOnSendButton')
 data.setCell(11, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(11, 3, 2351);
+data.setCell(11, 3, 2328);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'enterEmailIDAndClickOnNextButton')
 data.setCell(12, 2, 'ownAssignments.GMailAssignmentWithExtentReport')
-data.setCell(12, 3, 666);
+data.setCell(12, 3, 472);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -459,119 +444,117 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">launchChromeBrowser(chrome)</span>
-                <span class="method-start">620 ms</span>
+                <span class="method-start">512 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">enterEmailIDAndClickOnNextButton</span>
-                <span class="method-start">9532 ms</span>
+                <span class="method-start">9047 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=enterEmailIDAndClickOnNextButton status=SUCCESS method=GMailAssignmentWithExtentRep...)</span>
-                <span class="method-start">10200 ms</span>
+                <span class="method-start">9522 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterPasswordAndClickOnNext</span>
-                <span class="method-start">10218 ms</span>
+                <span class="method-start">9543 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=enterPasswordAndClickOnNext status=SUCCESS method=GMailAssignmentWithExtentReport.e...)</span>
-                <span class="method-start">13619 ms</span>
+                <span class="method-start">12942 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickOnComposeButton</span>
-                <span class="method-start">13620 ms</span>
+                <span class="method-start">12946 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=clickOnComposeButton status=SUCCESS method=GMailAssignmentWithExtentReport.clickOnC...)</span>
-                <span class="method-start">27757 ms</span>
+                <span class="method-start">26438 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">markSocial</span>
-                <span class="method-start">27758 ms</span>
+                <span class="method-start">26439 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=markSocial status=SUCCESS method=GMailAssignmentWithExtentReport.markSocial()[pri:5...)</span>
-                <span class="method-start">31087 ms</span>
+                <span class="method-start">29837 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">hoverMouseOverLabelMenu</span>
-                <span class="method-start">31088 ms</span>
+                <span class="method-start">29840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=hoverMouseOverLabelMenu status=SUCCESS method=GMailAssignmentWithExtentReport.hover...)</span>
-                <span class="method-start">34375 ms</span>
+                <span class="method-start">33112 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterSocialTextAndSelect</span>
-                <span class="method-start">34377 ms</span>
+                <span class="method-start">33114 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=enterSocialTextAndSelect status=SUCCESS method=GMailAssignmentWithExtentReport.ente...)</span>
-                <span class="method-start">45796 ms</span>
+                <span class="method-start">44511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterToEmailID</span>
-                <span class="method-start">45813 ms</span>
+                <span class="method-start">44532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=enterToEmailID status=SUCCESS method=GMailAssignmentWithExtentReport.enterToEmailID...)</span>
-                <span class="method-start">48384 ms</span>
+                <span class="method-start">47109 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterSubject</span>
-                <span class="method-start">48385 ms</span>
+                <span class="method-start">47112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=enterSubject status=SUCCESS method=GMailAssignmentWithExtentReport.enterSubject()[p...)</span>
-                <span class="method-start">51204 ms</span>
+                <span class="method-start">49924 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterMailBodyContent</span>
-                <span class="method-start">51205 ms</span>
+                <span class="method-start">49925 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=enterMailBodyContent status=SUCCESS method=GMailAssignmentWithExtentReport.enterMai...)</span>
-                <span class="method-start">54232 ms</span>
+                <span class="method-start">53151 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickOnSendButton</span>
-                <span class="method-start">54234 ms</span>
+                <span class="method-start">53152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=clickOnSendButton status=SUCCESS method=GMailAssignmentWithExtentReport.clickOnSend...)</span>
-                <span class="method-start">56587 ms</span>
+                <span class="method-start">55482 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyEmailReceivedInSocialTab</span>
-                <span class="method-start">56588 ms</span>
+                <span class="method-start">55483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=verifyEmailReceivedInSocialTab status=SUCCESS method=GMailAssignmentWithExtentRepor...)</span>
-                <span class="method-start">62652 ms</span>
+                <span class="method-start">61744 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyEmailReceivedAndMarkStar</span>
-                <span class="method-start">62654 ms</span>
+                <span class="method-start">61747 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">updateExtentReport([TestResult name=verifyEmailReceivedAndMarkStar status=FAILURE method=GMailAssignmentWithExtentRepor...)</span>
-                <span class="method-start">80961 ms</span>
+                <span class="method-name">updateExtentReport([TestResult name=verifyEmailReceivedAndMarkStar status=SUCCESS method=GMailAssignmentWithExtentRepor...)</span>
+                <span class="method-start">66660 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openEmail</span>
-                <span class="method-start">80964 ms</span>
+                <span class="method-start">66661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">updateExtentReport([TestResult name=openEmail status=FAILURE method=GMailAssignmentWithExtentReport.openEmail()[pri:15,...)</span>
-                <span class="method-start">85146 ms</span>
+                <span class="method-start">69792 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushExtent</span>
-                <span class="method-start">85183 ms</span>
+                <span class="method-start">69900 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
