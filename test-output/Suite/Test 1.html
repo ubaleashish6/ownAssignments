@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 21 22:23:05 IST 2019</td>
+<td>Started on:</td><td>Sun Sep 29 00:04:18 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66592 ms)</td>
+<tr><td>Total time:</td><td>84 seconds (84535 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,56 +75,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.openEmail()'><b>openEmail</b><br>Test class: ownAssignments.GMailAssignment</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=77.0.3865.90)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3e28c68a902e66e2bec5b60593df11fd
-*** Element info: {Using=xpath, value=//span[@class=&apos;bqe&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at ownAssignments.GMailAssignment.openEmail(GMailAssignment.java:135)
+<td title='ownAssignments.GMailAssignmentWithExtentReport.openEmail()'><b>openEmail</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at ownAssignments.GMailAssignmentWithExtentReport.openEmail(GMailAssignmentWithExtentReport.java:205)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1186609464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1186609464'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=77.0.3865.90)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3e28c68a902e66e2bec5b60593df11fd
-*** Element info: {Using=xpath, value=//span[@class=&apos;bqe&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at ownAssignments.GMailAssignment.openEmail(GMailAssignment.java:135)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace248581779", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace248581779'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at ownAssignments.GMailAssignmentWithExtentReport.openEmail(GMailAssignmentWithExtentReport.java:205)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,59 +110,33 @@ Session ID: 3e28c68a902e66e2bec5b60593df11fd
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>0</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>4</td>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.verifyEmailReceivedAndMarkStar()'><b>verifyEmailReceivedAndMarkStar</b><br>Test class: ownAssignments.GMailAssignment</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=77.0.3865.90)
+<td title='ownAssignments.GMailAssignmentWithExtentReport.verifyEmailReceivedAndMarkStar()'><b>verifyEmailReceivedAndMarkStar</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;In regards with selenium automation&apos;]/parent::div/parent::td/preceding-sibling::td/span[1] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3e28c68a902e66e2bec5b60593df11fd
-*** Element info: {Using=xpath, value=//span[@class=&apos;bqe&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at ownAssignments.GMailAssignment.verifyEmailReceivedAndMarkStar(GMailAssignment.java:113)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8f6c789b8ee605093018575ccdc6415
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at ownAssignments.GMailAssignmentWithExtentReport.verifyEmailReceivedAndMarkStar(GMailAssignmentWithExtentReport.java:184)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace764333855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace764333855'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=77.0.3865.90)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269174118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1269174118'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;In regards with selenium automation&apos;]/parent::div/parent::td/preceding-sibling::td/span[1] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;DESKTOP-P0VOKG9&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3e28c68a902e66e2bec5b60593df11fd
-*** Element info: {Using=xpath, value=//span[@class=&apos;bqe&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at ownAssignments.GMailAssignment.verifyEmailReceivedAndMarkStar(GMailAssignment.java:113)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8f6c789b8ee605093018575ccdc6415
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at ownAssignments.GMailAssignmentWithExtentReport.verifyEmailReceivedAndMarkStar(GMailAssignmentWithExtentReport.java:184)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -220,8 +158,8 @@ Session ID: 3e28c68a902e66e2bec5b60593df11fd
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>0</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>18</td>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -231,60 +169,60 @@ Session ID: 3e28c68a902e66e2bec5b60593df11fd
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.clickOnComposeButton()'><b>clickOnComposeButton</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.clickOnComposeButton()'><b>clickOnComposeButton</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
-<td>16</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>14</td>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.clickOnSendButton()'><b>clickOnSendButton</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.clickOnSendButton()'><b>clickOnSendButton</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>2</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.enterEmailIDAndClickOnNextButton()'><b>enterEmailIDAndClickOnNextButton</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.enterEmailIDAndClickOnNextButton()'><b>enterEmailIDAndClickOnNextButton</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
-<td>1</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>0</td>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.enterMailBodyContent()'><b>enterMailBodyContent</b><br>Test class: ownAssignments.GMailAssignment</td>
-<td></td>
-<td>3</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
-<tr>
-<td title='ownAssignments.GMailAssignment.enterPasswordAndClickOnNext()'><b>enterPasswordAndClickOnNext</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.enterMailBodyContent()'><b>enterMailBodyContent</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>3</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.enterSocialTextAndSelect()'><b>enterSocialTextAndSelect</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.enterPasswordAndClickOnNext()'><b>enterPasswordAndClickOnNext</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
+<td></td>
+<td>3</td>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
+<tr>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.enterSocialTextAndSelect()'><b>enterSocialTextAndSelect</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>11</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.enterSubject()'><b>enterSubject</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.enterSubject()'><b>enterSubject</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>2</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.enterToEmailID()'><b>enterToEmailID</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.enterToEmailID()'><b>enterToEmailID</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>2</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.hoverMouseOverLabelMenu()'><b>hoverMouseOverLabelMenu</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.hoverMouseOverLabelMenu()'><b>hoverMouseOverLabelMenu</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>3</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.markSocial()'><b>markSocial</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.markSocial()'><b>markSocial</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
 <td>3</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 <tr>
-<td title='ownAssignments.GMailAssignment.verifyEmailReceivedInSocialTab()'><b>verifyEmailReceivedInSocialTab</b><br>Test class: ownAssignments.GMailAssignment</td>
+<td title='ownAssignments.GMailAssignmentWithExtentReport.verifyEmailReceivedInSocialTab()'><b>verifyEmailReceivedInSocialTab</b><br>Test class: ownAssignments.GMailAssignmentWithExtentReport</td>
 <td></td>
-<td>7</td>
-<td>ownAssignments.GMailAssignment@6f7fd0e6</td></tr>
+<td>6</td>
+<td>ownAssignments.GMailAssignmentWithExtentReport@66a3ffec</td></tr>
 </table><p>
 </body>
 </html>

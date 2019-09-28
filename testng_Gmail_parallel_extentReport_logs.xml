@@ -5,14 +5,8 @@
   <test name="Test 1">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="ownAssignments.GMailAssignment"/>
+      <class name="ownAssignments.GMailAssignmentWithExtentReport"/>
     </classes>
   </test> <!-- Test -->
   
-  <test name="Test 2">
-  <parameter name="browser" value="ff"/>
-    <classes>
-      <class name="ownAssignments.GMailAssignment"/>
-    </classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->
