@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 public class ExtendReportPractice {
 	
 	public ExtendReportPractice(){
-		test5;
-		test6;
-		test7;
+		test1;
+		test2;
+		test3;
 	}
 	@Test
 	public void generateExtentReports(){
