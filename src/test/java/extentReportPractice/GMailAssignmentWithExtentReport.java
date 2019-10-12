@@ -1,15 +1,19 @@
-package ownAssignments;
+package extentReportPractice;
 
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +24,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -33,17 +38,19 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class GMailAssignmentWithExtentReport {
+public class GMailAssignmentWithExtentReport extends TestListenerAdapter {
 	WebDriver driver;
 	ExtentHtmlReporter htmlReport;
 	ExtentReports reports;
 	ExtentTest test;
 	String reportPath="./Reports/Report.html";
+	String screenShotFolder="./Screenshots/";
+	String currentDate;
 	
 	@BeforeSuite
 	public void init(){
-		String reportDate=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		htmlReport=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/reports/ExtentReport_"+reportDate+".html"));
+		currentDate=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		htmlReport=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/reports/ExtentReport_"+currentDate+".html"));
 		htmlReport.config().setDocumentTitle("Automation Report");
 		htmlReport.config().setReportName("Gmail Functionality");
 		htmlReport.config().setTheme(Theme.DARK);
@@ -76,10 +83,13 @@ public class GMailAssignmentWithExtentReport {
 		driver.get("http://www.gmail.com/");
 	}
 	@AfterMethod
-	public void updateExtentReport(ITestResult result){
+	public void updateExtentReport(ITestResult result) throws IOException{
+		GMailAssignmentWithExtentReport obj=new GMailAssignmentWithExtentReport();
 		if(result.getStatus()==ITestResult.FAILURE){
+		//	obj.captureScreenshot();
 			test.log(Status.FAIL, "Test Case failed: "+result.getName());
 			test.log(Status.FAIL, "Failed reason is: "+result.getThrowable());
+			
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS){
 			test.log(Status.PASS, "Test Case Passed: "+result.getName());
@@ -197,7 +207,7 @@ public class GMailAssignmentWithExtentReport {
 	public void openEmail(){
 		test=reports.createTest("openEmail");
 		List<WebElement> emails=driver.findElements(By.xpath("//span[@class='bqe']"));
-		System.out.println("Total Emails: "+emails.size());
+		//System.out.println("Total Emails: "+emails.size());
 		for(WebElement email:emails){
 			String emailSubject=email.getText();
 			if(emailSubject.equalsIgnoreCase("In regards with selenium automation")){
@@ -205,10 +215,37 @@ public class GMailAssignmentWithExtentReport {
 				email.click();
 			}
 		}
-		Assert.assertTrue(false);
+		//Assert.assertTrue(false);
+		Assert.assertEquals(driver.getTitle(), "abcccccc");
 	}
 	public void takeScreenShot(String folderPath){
 		
+	}
+	public void captureScreenshot() throws IOException{
+		
+	}
+	@Override
+	public void onTestFailure(ITestResult result){
+		try{
+			File folder=new File(screenShotFolder);
+			//String currentDate=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+			//System.out.println(currentDate);
+			if(folder.exists()){
+				//folder.mkdir();
+			}
+			else{
+				folder.mkdir();
+			}
+			File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			String srcFileName="screenshot_"+currentDate+".png";
+			System.out.println(srcFileName);
+			String completePath=screenShotFolder+"/"+srcFileName;
+			
+			FileUtils.copyFile(srcFile, new File(completePath));
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
 	}
 			
 }

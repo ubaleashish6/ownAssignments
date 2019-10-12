@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="69284" started-at="2019-09-28T18:42:46Z" finished-at="2019-09-28T18:43:55Z">
+  <suite name="Suite" duration-ms="72332" started-at="2019-10-12T06:23:17Z" finished-at="2019-10-12T06:24:29Z">
     <groups>
     </groups>
-    <test name="Test 1" duration-ms="69284" started-at="2019-09-28T18:42:46Z" finished-at="2019-09-28T18:43:55Z">
-      <class name="ownAssignments.GMailAssignmentWithExtentReport">
-        <test-method status="PASS" signature="init()[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="init" is-config="true" duration-ms="504" started-at="2019-09-29T00:12:46Z" finished-at="2019-09-29T00:12:46Z">
+    <test name="Test 1" duration-ms="72332" started-at="2019-10-12T06:23:17Z" finished-at="2019-10-12T06:24:29Z">
+      <class name="extentReportPractice.GMailAssignmentWithExtentReport">
+        <test-method status="PASS" signature="init()[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="init" is-config="true" duration-ms="343" started-at="2019-10-12T11:53:16Z" finished-at="2019-10-12T11:53:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="launchChromeBrowser" is-config="true" duration-ms="8511" started-at="2019-09-29T00:12:46Z" finished-at="2019-09-29T00:12:55Z">
+        <test-method status="PASS" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="launchChromeBrowser" is-config="true" duration-ms="10072" started-at="2019-10-12T11:53:17Z" finished-at="2019-10-12T11:53:27Z">
           <params>
             <param index="0">
               <value>
@@ -22,198 +22,220 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method status="PASS" signature="enterEmailIDAndClickOnNextButton()[pri:2, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="enterEmailIDAndClickOnNextButton" duration-ms="472" started-at="2019-09-29T00:12:55Z" finished-at="2019-09-29T00:12:55Z">
+        <test-method status="PASS" signature="enterEmailIDAndClickOnNextButton()[pri:2, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="enterEmailIDAndClickOnNextButton" duration-ms="422" started-at="2019-10-12T11:53:27Z" finished-at="2019-10-12T11:53:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterEmailIDAndClickOnNextButton -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="19" started-at="2019-09-29T00:12:55Z" finished-at="2019-09-29T00:12:55Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="17" started-at="2019-10-12T11:53:27Z" finished-at="2019-10-12T11:53:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterEmailIDAndClickOnNextButton status=SUCCESS method=GMailAssignmentWithExtentReport.enterEmailIDAndClickOnNextButton()[pri:2, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=enterEmailIDAndClickOnNextButton on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.enterEmailIDAndClickOnNextButton()[pri:2, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="enterPasswordAndClickOnNext()[pri:3, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="enterPasswordAndClickOnNext" duration-ms="3398" started-at="2019-09-29T00:12:55Z" finished-at="2019-09-29T00:12:58Z">
+        <test-method status="PASS" signature="enterPasswordAndClickOnNext()[pri:3, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="enterPasswordAndClickOnNext" duration-ms="3352" started-at="2019-10-12T11:53:27Z" finished-at="2019-10-12T11:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterPasswordAndClickOnNext -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-09-29T00:12:58Z" finished-at="2019-09-29T00:12:58Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:53:30Z" finished-at="2019-10-12T11:53:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterPasswordAndClickOnNext status=SUCCESS method=GMailAssignmentWithExtentReport.enterPasswordAndClickOnNext()[pri:3, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=enterPasswordAndClickOnNext on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.enterPasswordAndClickOnNext()[pri:3, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="clickOnComposeButton()[pri:4, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="clickOnComposeButton" duration-ms="13490" started-at="2019-09-29T00:12:58Z" finished-at="2019-09-29T00:13:12Z">
+        <test-method status="PASS" signature="clickOnComposeButton()[pri:4, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="clickOnComposeButton" duration-ms="16690" started-at="2019-10-12T11:53:30Z" finished-at="2019-10-12T11:53:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnComposeButton -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-09-29T00:13:12Z" finished-at="2019-09-29T00:13:12Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:53:47Z" finished-at="2019-10-12T11:53:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickOnComposeButton status=SUCCESS method=GMailAssignmentWithExtentReport.clickOnComposeButton()[pri:4, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=clickOnComposeButton on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.clickOnComposeButton()[pri:4, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="markSocial()[pri:5, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="markSocial" duration-ms="3393" started-at="2019-09-29T00:13:12Z" finished-at="2019-09-29T00:13:15Z">
+        <test-method status="PASS" signature="markSocial()[pri:5, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="markSocial" duration-ms="3164" started-at="2019-10-12T11:53:47Z" finished-at="2019-10-12T11:53:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- markSocial -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="2" started-at="2019-09-29T00:13:15Z" finished-at="2019-09-29T00:13:15Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:53:50Z" finished-at="2019-10-12T11:53:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=markSocial status=SUCCESS method=GMailAssignmentWithExtentReport.markSocial()[pri:5, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=markSocial on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.markSocial()[pri:5, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="hoverMouseOverLabelMenu()[pri:6, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="hoverMouseOverLabelMenu" duration-ms="3271" started-at="2019-09-29T00:13:15Z" finished-at="2019-09-29T00:13:19Z">
+        <test-method status="PASS" signature="hoverMouseOverLabelMenu()[pri:6, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="hoverMouseOverLabelMenu" duration-ms="3428" started-at="2019-10-12T11:53:50Z" finished-at="2019-10-12T11:53:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hoverMouseOverLabelMenu -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-09-29T00:13:19Z" finished-at="2019-09-29T00:13:19Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="2" started-at="2019-10-12T11:53:54Z" finished-at="2019-10-12T11:53:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=hoverMouseOverLabelMenu status=SUCCESS method=GMailAssignmentWithExtentReport.hoverMouseOverLabelMenu()[pri:6, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=hoverMouseOverLabelMenu on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.hoverMouseOverLabelMenu()[pri:6, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="enterSocialTextAndSelect()[pri:7, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="enterSocialTextAndSelect" duration-ms="11392" started-at="2019-09-29T00:13:19Z" finished-at="2019-09-29T00:13:30Z">
+        <test-method status="PASS" signature="enterSocialTextAndSelect()[pri:7, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="enterSocialTextAndSelect" duration-ms="11279" started-at="2019-10-12T11:53:54Z" finished-at="2019-10-12T11:54:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterSocialTextAndSelect -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="19" started-at="2019-09-29T00:13:30Z" finished-at="2019-09-29T00:13:30Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:54:05Z" finished-at="2019-10-12T11:54:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterSocialTextAndSelect status=SUCCESS method=GMailAssignmentWithExtentReport.enterSocialTextAndSelect()[pri:7, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=enterSocialTextAndSelect on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.enterSocialTextAndSelect()[pri:7, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="enterToEmailID()[pri:8, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="enterToEmailID" duration-ms="2575" started-at="2019-09-29T00:13:30Z" finished-at="2019-09-29T00:13:33Z">
+        <test-method status="PASS" signature="enterToEmailID()[pri:8, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="enterToEmailID" duration-ms="2349" started-at="2019-10-12T11:54:05Z" finished-at="2019-10-12T11:54:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterToEmailID -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="2" started-at="2019-09-29T00:13:33Z" finished-at="2019-09-29T00:13:33Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="0" started-at="2019-10-12T11:54:07Z" finished-at="2019-10-12T11:54:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterToEmailID status=SUCCESS method=GMailAssignmentWithExtentReport.enterToEmailID()[pri:8, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=enterToEmailID on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.enterToEmailID()[pri:8, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="enterSubject()[pri:9, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="enterSubject" duration-ms="2810" started-at="2019-09-29T00:13:33Z" finished-at="2019-09-29T00:13:35Z">
+        <test-method status="PASS" signature="enterSubject()[pri:9, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="enterSubject" duration-ms="2660" started-at="2019-10-12T11:54:07Z" finished-at="2019-10-12T11:54:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterSubject -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="0" started-at="2019-09-29T00:13:35Z" finished-at="2019-09-29T00:13:35Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:54:10Z" finished-at="2019-10-12T11:54:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterSubject status=SUCCESS method=GMailAssignmentWithExtentReport.enterSubject()[pri:9, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=enterSubject on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.enterSubject()[pri:9, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="enterMailBodyContent()[pri:10, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="enterMailBodyContent" duration-ms="3225" started-at="2019-09-29T00:13:35Z" finished-at="2019-09-29T00:13:39Z">
+        <test-method status="PASS" signature="enterMailBodyContent()[pri:10, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="enterMailBodyContent" duration-ms="2690" started-at="2019-10-12T11:54:10Z" finished-at="2019-10-12T11:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterMailBodyContent -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-09-29T00:13:39Z" finished-at="2019-09-29T00:13:39Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:54:13Z" finished-at="2019-10-12T11:54:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterMailBodyContent status=SUCCESS method=GMailAssignmentWithExtentReport.enterMailBodyContent()[pri:10, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=enterMailBodyContent on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.enterMailBodyContent()[pri:10, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="clickOnSendButton()[pri:11, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="clickOnSendButton" duration-ms="2328" started-at="2019-09-29T00:13:39Z" finished-at="2019-09-29T00:13:41Z">
+        <test-method status="PASS" signature="clickOnSendButton()[pri:11, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="clickOnSendButton" duration-ms="2205" started-at="2019-10-12T11:54:13Z" finished-at="2019-10-12T11:54:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSendButton -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="0" started-at="2019-09-29T00:13:41Z" finished-at="2019-09-29T00:13:41Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="4" started-at="2019-10-12T11:54:15Z" finished-at="2019-10-12T11:54:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickOnSendButton status=SUCCESS method=GMailAssignmentWithExtentReport.clickOnSendButton()[pri:11, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=clickOnSendButton on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.clickOnSendButton()[pri:11, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="verifyEmailReceivedInSocialTab()[pri:12, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="verifyEmailReceivedInSocialTab" duration-ms="6258" started-at="2019-09-29T00:13:41Z" finished-at="2019-09-29T00:13:47Z">
+        <test-method status="PASS" signature="verifyEmailReceivedInSocialTab()[pri:12, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="verifyEmailReceivedInSocialTab" duration-ms="5724" started-at="2019-10-12T11:54:15Z" finished-at="2019-10-12T11:54:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailReceivedInSocialTab -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="2" started-at="2019-09-29T00:13:47Z" finished-at="2019-09-29T00:13:47Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:54:21Z" finished-at="2019-10-12T11:54:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEmailReceivedInSocialTab status=SUCCESS method=GMailAssignmentWithExtentReport.verifyEmailReceivedInSocialTab()[pri:12, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=verifyEmailReceivedInSocialTab on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.verifyEmailReceivedInSocialTab()[pri:12, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="verifyEmailReceivedAndMarkStar()[pri:13, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="verifyEmailReceivedAndMarkStar" duration-ms="4911" started-at="2019-09-29T00:13:47Z" finished-at="2019-09-29T00:13:52Z">
+        <test-method status="PASS" signature="verifyEmailReceivedAndMarkStar()[pri:13, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="verifyEmailReceivedAndMarkStar" duration-ms="7038" started-at="2019-10-12T11:54:21Z" finished-at="2019-10-12T11:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailReceivedAndMarkStar -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-09-29T00:13:52Z" finished-at="2019-09-29T00:13:52Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="10" started-at="2019-10-12T11:54:28Z" finished-at="2019-10-12T11:54:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEmailReceivedAndMarkStar status=SUCCESS method=GMailAssignmentWithExtentReport.verifyEmailReceivedAndMarkStar()[pri:13, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=verifyEmailReceivedAndMarkStar on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=SUCCESS method=GMailAssignmentWithExtentReport.verifyEmailReceivedAndMarkStar()[pri:13, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="FAIL" signature="openEmail()[pri:15, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="openEmail" duration-ms="3126" started-at="2019-09-29T00:13:52Z" finished-at="2019-09-29T00:13:55Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="openEmail()[pri:15, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="openEmail" duration-ms="1156" started-at="2019-10-12T11:54:28Z" finished-at="2019-10-12T11:54:29Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATHARVA', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73b4bd979db1f3381b27fb3276775f66]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at ownAssignments.GMailAssignmentWithExtentReport.openEmail(GMailAssignmentWithExtentReport.java:208)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATHARVA', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Atharva\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73b4bd979db1f3381b27fb3276775f66
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at extentReportPractice.GMailAssignmentWithExtentReport.openEmail(GMailAssignmentWithExtentReport.java:212)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -236,26 +258,26 @@
 	at java.lang.Thread.run(Thread.java:745)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openEmail -->
-        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="updateExtentReport" is-config="true" duration-ms="3" started-at="2019-09-29T00:13:55Z" finished-at="2019-09-29T00:13:55Z">
+        <test-method status="PASS" signature="updateExtentReport(org.testng.ITestResult)[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="updateExtentReport" is-config="true" duration-ms="1" started-at="2019-10-12T11:54:29Z" finished-at="2019-10-12T11:54:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openEmail status=FAILURE method=GMailAssignmentWithExtentReport.openEmail()[pri:15, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=openEmail on [GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0] status=FAILURE method=GMailAssignmentWithExtentReport.openEmail()[pri:15, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExtentReport -->
-        <test-method status="PASS" signature="flushExtent()[pri:0, instance:ownAssignments.GMailAssignmentWithExtentReport@66a3ffec]" name="flushExtent" is-config="true" duration-ms="474" started-at="2019-09-29T00:13:55Z" finished-at="2019-09-29T00:13:56Z">
+        <test-method status="PASS" signature="flushExtent()[pri:0, instance:[GMailAssignmentWithExtentReport passed=0 failed=0 skipped=0]]" name="flushExtent" is-config="true" duration-ms="453" started-at="2019-10-12T11:54:29Z" finished-at="2019-10-12T11:54:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushExtent -->
-      </class> <!-- ownAssignments.GMailAssignmentWithExtentReport -->
+      </class> <!-- extentReportPractice.GMailAssignmentWithExtentReport -->
     </test> <!-- Test 1 -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,24 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ownAssignments.GMailAssignmentWithExtentReport">
+      <class name="extentReportPractice.GMailAssignmentWithExtentReport">
         <methods>
           <include name="enterPasswordAndClickOnNext"/>
-          <include name="clickOnSendButton"/>
-          <include name="enterSubject"/>
-          <include name="verifyEmailReceivedAndMarkStar"/>
           <include name="markSocial"/>
-          <include name="clickOnComposeButton"/>
-          <include name="verifyEmailReceivedInSocialTab"/>
-          <include name="init"/>
-          <include name="enterToEmailID"/>
-          <include name="hoverMouseOverLabelMenu"/>
-          <include name="enterEmailIDAndClickOnNextButton"/>
+          <include name="clickOnSendButton"/>
+          <include name="verifyEmailReceivedAndMarkStar"/>
+          <include name="enterSubject"/>
           <include name="enterSocialTextAndSelect"/>
           <include name="openEmail"/>
           <include name="enterMailBodyContent"/>
+          <include name="clickOnComposeButton"/>
+          <include name="enterEmailIDAndClickOnNextButton"/>
+          <include name="enterToEmailID"/>
+          <include name="init"/>
+          <include name="hoverMouseOverLabelMenu"/>
+          <include name="verifyEmailReceivedInSocialTab"/>
         </methods>
-      </class> <!-- ownAssignments.GMailAssignmentWithExtentReport -->
+      </class> <!-- extentReportPractice.GMailAssignmentWithExtentReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

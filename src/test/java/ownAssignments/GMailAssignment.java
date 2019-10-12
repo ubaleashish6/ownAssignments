@@ -131,6 +131,7 @@ public class GMailAssignment {
 			String emailSubject=email.getText();
 			if(emailSubject.equalsIgnoreCase("In regards with selenium automation")){
 				System.out.println(emailSubject);
+				//By star=By.xpath("//span[text()='In regards with selenium automation']/parent::div/parent::td/preceding-sibling::td/span[1]");
 				By star=By.xpath("//span[text()='In regards with selenium automation']/parent::div/parent::td/preceding-sibling::td/span[1]");
 				WebDriverWait wait=new WebDriverWait(driver, 10);
 				/*wait.until(ExpectedConditions.invisibilityOfElementLocated(star));

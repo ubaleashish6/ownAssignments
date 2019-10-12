@@ -5,15 +5,15 @@
   <test name="Test 1(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="ownAssignments.GMailAssignmentWithExtentReport">
+      <class name="extentReportPractice.GMailAssignmentWithExtentReport">
         <methods>
-          <include name="init"/>
-          <include name="flushExtent"/>
           <include name="openEmail"/>
           <include name="launchChromeBrowser"/>
           <include name="updateExtentReport"/>
+          <include name="flushExtent"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- ownAssignments.GMailAssignmentWithExtentReport -->
+      </class> <!-- extentReportPractice.GMailAssignmentWithExtentReport -->
     </classes>
   </test> <!-- Test 1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
