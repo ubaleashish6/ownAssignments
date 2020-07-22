@@ -43,11 +43,12 @@ public class ExcelToHashtable {
 		int rowCount=sheet.getLastRowNum()+1;
 		System.out.println("Total Row counts: "+rowCount);
 		int count=0;
-		for(int i=1;i<rowCount;i++){
+		int i,j;
+		for(i=1;i<rowCount;i++){
 			row=sheet.getRow(i);
 			data=new Object[rowCount-1][1];
 			
-			for(int j=0;j<row.getLastCellNum();j++){
+			for(j=0;j<row.getLastCellNum();j++){
 				cell=row.getCell(j);
 				String key=sheet.getRow(0).getCell(j).getStringCellValue();
 				String value=cell.getStringCellValue();
@@ -55,7 +56,7 @@ public class ExcelToHashtable {
 				
 			}
 			data[count][0]=map;
-			System.out.println(data.toString());
+			System.out.println(data[i-1][0].toString());
 			count++;
 		}
 		/*for(Map.Entry<String, String> entrySet:map.entrySet()){
