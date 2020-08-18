@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="852" started-at="2020-08-18T10:05:20Z" finished-at="2020-08-18T10:05:21Z">
+  <suite name="Default suite" duration-ms="49456" started-at="2020-08-18T12:18:19Z" finished-at="2020-08-18T12:19:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="852" started-at="2020-08-18T10:05:20Z" finished-at="2020-08-18T10:05:21Z">
-      <class name="dataDriven.ReadExcelHashMap">
-        <test-method status="PASS" signature="testOne()[pri:0, instance:dataDriven.ReadExcelHashMap@66a3ffec]" name="testOne" duration-ms="791" started-at="2020-08-18T10:05:20Z" finished-at="2020-08-18T10:05:21Z">
+    <test name="Default test" duration-ms="49456" started-at="2020-08-18T12:18:19Z" finished-at="2020-08-18T12:19:09Z">
+      <class name="dataDriven.TestUsingDataProvider">
+        <test-method status="PASS" signature="searchOnGoogleBasedOnData(java.util.Map)[pri:0, instance:dataDriven.TestUsingDataProvider@6093dd95]" name="searchOnGoogleBasedOnData" duration-ms="16434" started-at="2020-08-18T12:18:20Z" data-provider="getTestData" finished-at="2020-08-18T12:18:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=TC001, Username=ashishu, SearchText=Selenium tutorial, Password=ashishu}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-      </class> <!-- dataDriven.ReadExcelHashMap -->
+        </test-method> <!-- searchOnGoogleBasedOnData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:dataDriven.TestUsingDataProvider@6093dd95]" name="tearDown" is-config="true" duration-ms="915" started-at="2020-08-18T12:18:36Z" finished-at="2020-08-18T12:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="searchOnGoogleBasedOnData(java.util.Map)[pri:0, instance:dataDriven.TestUsingDataProvider@6093dd95]" name="searchOnGoogleBasedOnData" duration-ms="14867" started-at="2020-08-18T12:18:37Z" data-provider="getTestData" finished-at="2020-08-18T12:18:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=TC002, Username=ubalea, SearchText=API Atuomation tutorial, Password=ubalea}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOnGoogleBasedOnData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:dataDriven.TestUsingDataProvider@6093dd95]" name="tearDown" is-config="true" duration-ms="846" started-at="2020-08-18T12:18:52Z" finished-at="2020-08-18T12:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="searchOnGoogleBasedOnData(java.util.Map)[pri:0, instance:dataDriven.TestUsingDataProvider@6093dd95]" name="searchOnGoogleBasedOnData" duration-ms="14891" started-at="2020-08-18T12:18:53Z" data-provider="getTestData" finished-at="2020-08-18T12:19:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=TC003, Username=atharvau, SearchText=Performance testing, Password=atharvau}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOnGoogleBasedOnData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:dataDriven.TestUsingDataProvider@6093dd95]" name="tearDown" is-config="true" duration-ms="619" started-at="2020-08-18T12:19:08Z" finished-at="2020-08-18T12:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dataDriven.TestUsingDataProvider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
