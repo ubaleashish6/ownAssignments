@@ -4,7 +4,7 @@ public class Print1to100WithoutLoop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		printNos(45);
+		printNos(100);
 
 	}
 	static void printNos(int n) 
@@ -14,7 +14,7 @@ public class Print1to100WithoutLoop {
             printNos(n - 1); 
             System.out.print(n + " "); 
         } 
-        return; 
+        //return; 
     } 
 
 }
