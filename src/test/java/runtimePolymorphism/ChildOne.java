@@ -10,6 +10,8 @@ public class ChildOne extends ParentOne {
 		// TODO Auto-generated method stub
 		ParentOne objOne=new ChildOne();
 		objOne.methodOne();
+		
+		
 
 	}
 
