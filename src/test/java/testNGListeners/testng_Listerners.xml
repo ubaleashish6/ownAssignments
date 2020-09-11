@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
  <listeners>
- 	<listener class-name="orangeHRM.TestListener"/>
+ 	<listener class-name="testNGListeners.ListenerClass"/>
  </listeners>
   <test name="Test">  
     <classes>
-      <class name="orangeHRM.ScreenshotOnFailedTestCasesByUsingListener"/>
+      <class name="testNGListeners.OrangeHRMLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
