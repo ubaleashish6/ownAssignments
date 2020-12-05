@@ -1,5 +1,6 @@
 package javaPrograms;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -32,7 +33,21 @@ public class CountOfEachCharacterInString2 {
 				  System.out.println("Count of charater "+str.charAt(i)+ " is: "+counter[str.charAt(i)]);
 			  }
 		  }
+		  int value= 890;
+		  //String str=(String)value;
+		  System.out.println(Integer.valueOf("231"));
+		  System.out.println(Integer.valueOf(231));
+		  ArrayList<String> a=new ArrayList<>();
+		//  System.out.println(a.get(0));
+		  String str1="abc";
+		  String str2="abc";
+		  String str3=" abc";
+		  System.out.println(str1==str2);
+		  System.out.println(str1.equals(str2));
+		  
 	  }
+	 
+	  
 	 
 	
 
