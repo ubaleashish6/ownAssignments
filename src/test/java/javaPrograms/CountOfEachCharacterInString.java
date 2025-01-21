@@ -1,8 +1,16 @@
 package javaPrograms;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class CountOfEachCharacterInString {
 
@@ -31,7 +39,7 @@ public class CountOfEachCharacterInString {
 	
 	//=====Approach 1 - Using Collection==================================
 	
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String str="abcddd dfdfd dfdfd tre";
 		char[] charArray=str.toCharArray();
@@ -48,6 +56,44 @@ public class CountOfEachCharacterInString {
 			System.out.println(entMap.getKey()+": "+entMap.getValue());
 		}
 		
+	} */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="abcddd dfdfd dfdfd tre";
+		char[] charArray=str.toCharArray();
+		Map<Character, Integer> charMap=new HashMap<Character, Integer>();
+		System.out.println("Map before sorting.............");
+		for(char c: charArray) {
+			if(charMap.containsKey(c)) {
+				charMap.put(c, charMap.get(c)+1);
+			}
+			else {
+				charMap.put(c, 1);
+			}
+		}
+		printMap(charMap);
+		List<Map.Entry<Character, Integer>> sList=new ArrayList(charMap.entrySet());
+		Collections.sort(sList, new Comparator<Map.Entry<Character, Integer>>() {
+
+			@Override
+			public int compare(Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2) {
+				// TODO Auto-generated method stub
+				return o2.getValue().compareTo(o1.getValue());
+			}
+		});
+		System.out.println("Map after sorting.............");
+		Map<Character, Integer> sortedMap = new LinkedHashMap<Character, Integer>();
+        for (Map.Entry<Character, Integer> entry : sList) {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+        printMap(sortedMap);
 	}
+	public static <K, V> void printMap(Map<K, V> map) {
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+            System.out.println("Key : " + entry.getKey()
+                    + " Value : " + entry.getValue());
+        }
+    }
 
 }

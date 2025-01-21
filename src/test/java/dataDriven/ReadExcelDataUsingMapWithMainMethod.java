@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ReadExcelDataUsingMap {
+public class ReadExcelDataUsingMapWithMainMethod {
 	
 	public static List<Map<String, String>> getDataFromExcelIntoMap(){
 		
@@ -60,8 +61,18 @@ public class ReadExcelDataUsingMap {
 			e.printStackTrace();
 		}
 		
-		System.out.println(testDataAllRows);
+		//System.out.println(testDataAllRows);
 		return testDataAllRows;
+	}
+	public static void main(String args[]) {
+		
+		List<Map<String, String>> testDataAllRows1=getDataFromExcelIntoMap();
+		Iterator itr=testDataAllRows1.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
+		//System.out.println(testDataAllRows1);
 	}
 
 }

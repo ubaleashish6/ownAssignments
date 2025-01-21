@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ExcelToHashtable {
+public class ExcelToHashtableParticularRow {
 	
 	
 	
@@ -38,37 +38,44 @@ public class ExcelToHashtable {
 		System.out.println("File Path is: "+filePath);
 		fis=new FileInputStream(filePath);
 		wb=new XSSFWorkbook(fis);
+		Object data[][]=null;
 		sheet=wb.getSheet("userinfo");
 		int rowCount=sheet.getLastRowNum()+1;
 		System.out.println("Total Row counts: "+rowCount);
 		int count=0;
 		int i,j;
-		int rowNum=0;
 		for(i=1;i<rowCount;i++){
 			row=sheet.getRow(i);
-			//data=new Object[rowCount-1][1];
+			data=new Object[rowCount-1][1];
 			
 			for(j=0;j<row.getLastCellNum();j++){
 				cell=row.getCell(j);
-				
-				String cellText=cell.getStringCellValue();
-				if(cellText.equalsIgnoreCase("ashishu")) {
-					rowNum=i;
-					
-				}
-				break;
+				String key=sheet.getRow(0).getCell(j).getStringCellValue();
+				String value=cell.getStringCellValue();
+				map.put(key, value);
 				
 			}
-			
+			data[count][0]=map;
+			System.out.println(data[i-1][0].toString());
+			count++;
 		}
-		for(int k=0;k<rowCount-1;k++) {
-			String key=sheet.getRow(0).getCell(k).getStringCellValue();
-			String value=sheet.getRow(rowNum).getCell(k).getStringCellValue();
-			System.out.println(key+ " - "+value);
-			map.put(key, value);
-		}
+		/*for(Map.Entry<String, String> entrySet:map.entrySet()){
+			System.out.println(entrySet.getKey()+ " - "+entrySet.getValue());
+		}*/
+		/*for(int i=0;i<data.length;i++){
+			System.out.println(data[i][0].toString());
+			}*/
 		
+		//System.out.println(data[0][0]);
 	}
-
+	
+	/*@BeforeMethod
+	public void launchSite(){
+		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver_32.exe");
+		driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.makemytrip.com/");
+	}*/
 
 }

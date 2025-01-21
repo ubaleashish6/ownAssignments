@@ -4,10 +4,10 @@ public class LaptopforComparator  {
 	
 	String brand;
 	int ram;
-	double price;
+	Double price;
 	
 
-	public LaptopforComparator(String brand, int ram, double price) {
+	public LaptopforComparator(String brand, int ram, Double price) {
 		super();
 		this.brand = brand;
 		this.ram = ram;

@@ -27,10 +27,10 @@ class SortByEMPid implements Comparator<Employee>{
 	@Override
 	public int compare(Employee o1, Employee o2) {
 		// TODO Auto-generated method stub
-		if(o1.empId>o2.empId) {
+		if(o2.empId>o1.empId) {
 			return 1;
 		}
-		else if(o1.empId<o2.empId) {
+		else if(o2.empId<o1.empId) {
 			return -1;
 		}
 		return 0;

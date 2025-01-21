@@ -17,20 +17,24 @@ public class MainClassForComparator {
 		empList.add(new Employee(14344, "Ankit U", "Pune", 34));
 		empList.add(new Employee(10000, "Sahil U", "Pune", 34));
 		empList.add(new Employee(12000, "Sahil U", "Pune", 34));
+		System.out.println("Default list before sorting");
+		empList.forEach(s->System.out.println(s));
 		
 		System.out.println("List by sorting order of emp id");
 		Collections.sort(empList, new SortByEMPid());
-		Iterator<Employee> empitr=empList.iterator();
-		while(empitr.hasNext()) {
-			System.out.println(empitr.next());
-		}
+		empList.forEach(s->System.out.println(s));
+		/*
+		 * Iterator<Employee> empitr=empList.iterator(); while(empitr.hasNext()) {
+		 * System.out.println(empitr.next()); }
+		 */
 		
 		System.out.println("List by descending order of emp Name");
 		Collections.sort(empList, new SortByEMPName());
-		Iterator<Employee> empNameitr=empList.iterator();
-		while(empNameitr.hasNext()) {
-			System.out.println(empNameitr.next());
-		}
+		empList.forEach(s->System.out.println(s));
+		/*
+		 * Iterator<Employee> empNameitr=empList.iterator(); while(empNameitr.hasNext())
+		 * { System.out.println(empNameitr.next()); }
+		 */
 
 	}
 

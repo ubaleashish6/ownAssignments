@@ -6,38 +6,53 @@ import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class ReadExcelTestData {
 	
 	WebDriver driver=null;
+	List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
 	
-	@Test(priority = 1)
-	public void test1() throws InterruptedException {
-		List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
+	public void launchSite() {
 		driver=BrowserUtility.getDriver("Chrome");
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
+		
+	}
+		
+	@Test(priority = 1)
+	public void test1() throws InterruptedException {
+		//List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
+		/*
+		 * driver=BrowserUtility.getDriver("Chrome");
+		 * driver.get("https://www.google.com/"); driver.manage().window().maximize();
+		 */
+		launchSite();
 		driver.findElement(By.xpath("//input[@aria-label='Search']")).sendKeys(testData.get(0).get("SearchText"));
 		Thread.sleep(5000);
 		
 	}
 	@Test(priority = 2)
 	public void test2() throws InterruptedException {
-		List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
-		driver=BrowserUtility.getDriver("Chrome");
-		driver.get("https://www.google.com/");
-		driver.manage().window().maximize();
+		//List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
+		/*
+		 * driver=BrowserUtility.getDriver("Chrome");
+		 * driver.get("https://www.google.com/"); driver.manage().window().maximize();
+		 */
+		launchSite();
 		driver.findElement(By.xpath("//input[@aria-label='Search']")).sendKeys(testData.get(1).get("SearchText"));
 		Thread.sleep(5000);
 		
 	}
 	@Test(priority = 3)
 	public void test3() throws InterruptedException {
-		List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
-		driver=BrowserUtility.getDriver("Chrome");
-		driver.get("https://www.google.com/");
-		driver.manage().window().maximize();
+		//List<Map<String, String>> testData= ReadExcelDataUsingMap.getDataFromExcelIntoMap();
+		/*
+		 * driver=BrowserUtility.getDriver("Chrome");
+		 * driver.get("https://www.google.com/"); driver.manage().window().maximize();
+		 */
+		launchSite();
 		driver.findElement(By.xpath("//input[@aria-label='Search']")).sendKeys(testData.get(2).get("SearchText"));
 		Thread.sleep(5000);
 		

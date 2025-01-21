@@ -37,12 +37,12 @@ public class LaptopComparatorMain {
 			@Override
 			public int compare(LaptopforComparator o1, LaptopforComparator o2) {
 				// TODO Auto-generated method stub
-				return o2.brand.compareTo(o1.brand);
+				return o2.price.compareTo(o1.price);
 			}
 		};
 		Collections.sort(laps, comp);
 
-		System.out.println("Laptos before sorting on price = ");
+		System.out.println("Laptos after sorting on price = ");
 		for (LaptopforComparator lap : laps) {
 			System.out.println(lap);
 		}
