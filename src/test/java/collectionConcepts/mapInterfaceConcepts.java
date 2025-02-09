@@ -32,12 +32,8 @@ public class mapInterfaceConcepts {
 			}
 		} */
 		
-		mapObj.forEach((K,V) ->System.out.println(K +":"+V));
+		mapObj.forEach((K,V) ->{if(V>1) System.out.println(K +":"+V);});
 		
-	
-		
-		
-
 	}
 
 }
